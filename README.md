@@ -1,4 +1,4 @@
-## PACKAGES
+## Paketler
 
 - [laravel/fortify](https://github.com/laravel/fortify)
 - [spatie/laravel-permission](https://github.com/spatie/laravel-permission)
@@ -6,8 +6,9 @@
 - [alpinejs/alpine](https://github.com/alpinejs/alpine)
 - [laravel/sail](https://github.com/laravel/sail)
 
-## HTML, CSS
+## Tasarım
 
+- HTML
 - [Tailwind CSS](https://tailwindcss.com)
 
 ## Sayfalar
@@ -22,12 +23,15 @@
 - User #1 (Sadece dashboard ve sayfa #1'i görüntüleyebilir) *Kullanıcı adı:* user1@swordsec.com *Şifre:* password
 - User #2 (Sadece dashboard ve sayfa #2'yi görüntüleyebilir) *Kullanıcı adı:* user2@swordsec.com *Şifre:* password
 
-## Yükleme
+## Yükleme komutları
 
-- git clone https://github.com/ersanserkan/swordsec.git
-- cd swordsec
-- composer install
-- cp .env.example .env
-- php artisan key:generate
-- ./vendor/bin/sail up -d
-- ./vendor/bin/sail artisan migrate --seed
+```bash
+$ git clone https://github.com/ersanserkan/swordsec.git
+$ cd swordsec
+$ composer install
+$ cp .env.example .env
+$ php artisan key:generate
+$ php artisan sail:install
+$ ./vendor/bin/sail up -d
+$ ./vendor/bin/sail artisan migrate --seed
+```
