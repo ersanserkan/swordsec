@@ -19,9 +19,10 @@
 
 ## Kullanıcılar
 
-- Admin (Tüm sayfaları görüntüleyebilir) *Kullanıcı adı:* admin@swordsec.com *Şifre:* password
-- User #1 (Sadece dashboard ve sayfa #1'i görüntüleyebilir) *Kullanıcı adı:* user1@swordsec.com *Şifre:* password
-- User #2 (Sadece dashboard ve sayfa #2'yi görüntüleyebilir) *Kullanıcı adı:* user2@swordsec.com *Şifre:* password
+- Admin (Tüm sayfaları görüntüleyebilir) *Kullanıcı adı:* admin@swordsec.test *Şifre:* password
+- User #1 (Sadece dashboard ve sayfa #1'i görüntüleyebilir) *Kullanıcı adı:* user1@swordsec.test *Şifre:* password
+- User #2 (Sadece dashboard ve sayfa #2'yi görüntüleyebilir) *Kullanıcı adı:* user2@swordsec.test *Şifre:* password
+- User #3 (Sadece dashboard görüntüleyebilir) *Kullanıcı adı:* user3@swordsec.test *Şifre:* password
 
 ## Yükleme komutları
 

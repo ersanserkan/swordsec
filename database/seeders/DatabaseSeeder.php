@@ -20,24 +20,29 @@ class DatabaseSeeder extends Seeder
 
         $user = \App\Models\User::factory()->create([
             'name' => 'Admin',
-            'email' => 'admin@swordsec.com'
+            'email' => 'admin@swordsec.test'
         ]);
 
         $user->syncPermissions(['view first', 'view second']);
 
         $user = \App\Models\User::factory()->create([
             'name' => 'User #1',
-            'email' => 'user1@swordsec.com'
+            'email' => 'user1@swordsec.test'
         ]);
 
         $user->givePermissionTo('view first');
 
         $user = \App\Models\User::factory()->create([
             'name' => 'User #2',
-            'email' => 'user2@swordsec.com'
+            'email' => 'user2@swordsec.test'
         ]);
 
         $user->givePermissionTo('view second');
+
+        $user = \App\Models\User::factory()->create([
+            'name' => 'User #3',
+            'email' => 'user3@swordsec.test'
+        ]);
 
         Website::factory(100)->create();
     }
