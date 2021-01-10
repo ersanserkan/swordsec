@@ -7,10 +7,6 @@
     <title>Swordsec</title>
 
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-
-    <livewire:styles />
-    
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
 </head>
 
 <body>
@@ -63,8 +59,6 @@
             </div>
         </main>
     </div>
-    
-    <livewire:scripts />
 </body>
 
 </html>
