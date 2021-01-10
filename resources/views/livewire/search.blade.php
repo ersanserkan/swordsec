@@ -9,7 +9,7 @@
                 @keydown.window.prevent.?="$refs.search.focus()"
                 @keydown="open = true"
                 type="text"
-                class="w-full px-24 py-6 border border-gray-100 rounded-full shadow-2xl text-md focus:outline-none text-md"
+                class="w-full px-24 py-6 border border-gray-200 rounded-full shadow-xl text-md focus:outline-none text-md"
                 placeholder='Aramaya başlamak için buraya tıklayın (veya ? tuşuna basın)'
             />
 
@@ -30,21 +30,21 @@
 
         @if (strlen($search))
             <div
-                class="absolute w-full pt-8 bg-white border border-t-0 border-gray-100 shadow-xl top-12"
+                class="absolute w-full pt-4 bg-white border border-t-0 border-gray-200 shadow-xl top-12"
                 x-show="open"
             >
                 @if ($searchResults->count() > 0)
                     <ul>
                         @foreach ($searchResults as $each)
                             <li class="flex items-center px-4 py-2 text-lg cursor-pointer hover:bg-blue-100">
-                                <img src="https://picsum.photos/50/50" class="rounded-md" />
+                                <img src="https://picsum.photos/25/25" class="rounded-md" />
 
                                 <a href="#" class="ml-4">{{ Str::limit($each->url, 50) }}</a>
                             </li>
                         @endforeach
                     </ul>
                 @else
-                    <div class="py-8 text-gray-400 border-gray-200 rounded-b-lg text-center">"{{ $search }}" için herhangi bir sonuç bulunamadı..</div>
+                    <div class="py-8 rounded-b-lg text-center">"{{ $search }}" için herhangi bir sonuç bulunamadı..</div>
                 @endif
             </div>
         @endif
